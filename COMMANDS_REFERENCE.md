@@ -39,6 +39,18 @@ This document lists all available commands for the Telegram bot, organized by us
 **Usage:** `/demote_customer 123456789`  
 **Example:** `/demote_customer 555666777`
 
+### `/addcost <customer_uid> <amount>`
+**Access:** Admin only  
+**Description:** Add a cost entry for a customer  
+**Usage:** `/addcost <customer_uid> <amount>`  
+**Example:** `/addcost 123456789 25.00`
+
+### `/viewcosts <customer_uid>`
+**Access:** Admin only  
+**Description:** View all cost entries for a customer  
+**Usage:** `/viewcosts <customer_uid>`  
+**Example:** `/viewcosts 123456789`
+
 ---
 
 ## 🔍 **Search Commands**
@@ -170,6 +182,8 @@ This document lists all available commands for the Telegram bot, organized by us
 | `/testnotification` | ✅ | ❌ | ❌ |
 | `/reembed` | ✅ | ✅ | ❌ |
 | `/force-reembed` | ✅ | ✅ | ❌ |
+| `/addcost` | ✅ | ❌ | ❌ |
+| `/viewcosts` | ✅ | ❌ | ❌ |
 
 ---
 
@@ -200,6 +214,10 @@ This document lists all available commands for the Telegram bot, organized by us
 ### **Embedding Management**
 - Re-embed customers: `/reembed`
 - Force re-embed: `/force-reembed`
+
+### **Cost Management**
+- Add cost entry: `/addcost <customer_uid> <amount>`
+- View cost entries: `/viewcosts <customer_uid>`
 
 ---
 
@@ -239,6 +257,12 @@ This document lists all available commands for the Telegram bot, organized by us
 ```
 /reembed
 /force-reembed
+```
+
+### **Cost management:**
+```
+/addcost 123456789 25.00
+/viewcosts 123456789
 ```
 
 ---
