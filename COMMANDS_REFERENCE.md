@@ -144,11 +144,6 @@ This document lists all available commands for the Telegram bot, organized by us
 **Description:** Re-embed all customers whose embedding status is 'pending' or 'failed'. Use this to recover from failed or missed embeddings.  
 **Usage:** `/reembed`
 
-### `/force-reembed`
-**Access:** Admin, Worker  
-**Description:** Delete the entire vector database and re-embed all customers from scratch. Use this after resetting or corrupting the vector DB, or after a major schema/model change.  
-**Usage:** `/force-reembed`
-
 ---
 
 ## 🧬 **Embedding Workflow & Status**
